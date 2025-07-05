@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven Application</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #f8bbd0);
+      color: #333;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #ffffffcc;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline, .will, .quiz, .afterlife {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: #ffffffaa;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .timeline-bar {
+      background: #c5cae9;
+      height: 30px;
+      border-radius: 15px;
+      position: relative;
+      margin: 1rem 0;
+    }
+
+    .progress {
+      background: #7986cb;
+      height: 100%;
+      border-radius: 15px 0 0 15px;
+      text-align: right;
+      padding-right: 0.5rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #8e24aa;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6a1b9a;
+    }
+
+    .quiz-question {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Heaven Application</h1>
+    <p>A space between memory and eternity</p>
+  </header>
+
+  <section class="timeline">
+    <h2>Your Life Timeline</h2>
+    <p>From birth to now:</p>
+    <div class="timeline-bar">
+      <div class="progress" style="width: 70%;">21 yrs</div>
+    </div>
+    <p>Estimated time left: <strong>60 yrs</strong></p>
+  </section>
+
+  <section class="will">
+    <h2>Final Letters</h2>
+    <p>Write letters to your loved ones to be sent after your passing.</p>
+    <textarea rows="5" placeholder="Dear Mom, I want you to know..."></textarea>
+    <input type="text" placeholder="Recipient's email">
+    <button>Schedule Letter</button>
+  </section>
+
+  <section class="quiz">
+    <h2>Life Quiz Game</h2>
+    <p>Answer questions about yourself for others to remember you by.</p>
+    <div class="quiz-question">
+      <label>What was your happiest memory?</label>
+      <textarea rows="3"></textarea>
+    </div>
+    <div class="quiz-question">
+      <label>What’s a phrase you often said?</label>
+      <input type="text">
+    </div>
+    <div class="quiz-question">
+      <label>Who meant the most to you?</label>
+      <input type="text">
+    </div>
+    <button>Save Answers</button>
+  </section>
+
+  <section class="afterlife">
+    <h2>Post-Life Interaction</h2>
+    <p>If you're seeing this, it means I'm gone. Let's play a memory game.</p>
+    <button>Start Quiz About Me</button>
+    <p style="margin-top: 1rem; color: #666">"It feels like you're still here..."</p>
+  </section>
+</body>
+
+</html>
